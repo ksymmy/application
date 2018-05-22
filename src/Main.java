@@ -4,5 +4,6 @@ public class Main {
         System.out.println("测试分支合并");
         System.out.println("测试分支合并 feature-a");
         //git config --global push.default 'nothing'
+        //提交feature-b
     }
 }
