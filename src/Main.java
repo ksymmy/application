@@ -3,5 +3,6 @@ public class Main {
         System.out.println("["+Thread.currentThread().getName()+"]:"+"Hi World!");
         System.out.println("测试分支合并");
         System.out.println("测试分支合并 feature-a");
+        //git config --global push.default 'nothing'
     }
 }
