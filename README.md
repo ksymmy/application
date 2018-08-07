@@ -1,2 +1,10 @@
-# hiworld
-create my first git project
+# 一个小测试工程
+
+
+① 20180723
+
+增加了pom.xml文件,修改为maven项目
+
+② 20180806
+
+sqlite 队列执行;生产消费者模式;反射获取泛型类型
