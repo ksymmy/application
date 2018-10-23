@@ -1,4 +1,4 @@
-package com.wkcheng.quartz;
+package com.wkcheng.quartz.job;
 
 import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
@@ -8,7 +8,7 @@ import java.util.Date;
 
 /**
  * @author created by wkcheng@iflytek.com at 2018/10/23 8:47
- * @desc
+ * @desc quartz 方式1, 继承 QuartzJobBean
  */
 public class TestJob extends QuartzJobBean {
 
