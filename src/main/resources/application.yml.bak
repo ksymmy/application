@@ -1,0 +1,19 @@
+com:
+  wkcheng:
+    datasource: #数据源配置（这里是正式库的地址）
+      multi:
+        -
+          ds-name: base #数据源名称，动态切换会用到-基础库
+          primary: true #设置主数据源
+          driver-class-name: oracle.jdbc.driver.OracleDriver
+          url: jdbc:oracle:thin:@//10.81.251.115:1621/ybdb
+          username: ncms
+          password: ncms_jqkj_369_oracle11g
+          validationQuery: SELECT 1 FROM DUAL
+        -
+          ds-name: financing #数据源名称，动态切换会用到-筹资库
+          driver-class-name: oracle.jdbc.driver.OracleDriver
+          url: jdbc:oracle:thin:@//10.81.251.115:1621/ybdb
+          username: ybcz
+          password: ybcz_jqkj_369_oracle11g
+          validationQuery: SELECT 1 FROM DUAL

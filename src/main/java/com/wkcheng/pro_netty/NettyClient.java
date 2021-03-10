@@ -38,7 +38,7 @@ public class NettyClient {
 
         channelFuture.channel().writeAndFlush("hello 我是 netty");
 
-        channelFuture.channel().closeFuture();
+        channelFuture.channel().closeFuture().sync();
         System.out.println("客户端运行结束!");
     }
 }

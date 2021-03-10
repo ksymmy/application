@@ -38,7 +38,7 @@ public class NettyServer {
         });
 
         ChannelFuture channelFuture = server.bind(8777).sync();
-        channelFuture.channel().closeFuture();
+        channelFuture.channel().closeFuture().sync();
 
         System.out.println("关闭了");
     }
